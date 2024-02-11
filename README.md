@@ -16,7 +16,8 @@ https://github.com/k-akihiro1/graphql-todoapp-backend
 yarn add @nestjs/graphql @nestjs/apollo apollo-server-express graphql
 
 yarn add @apollo/server
-# バリデーション: https://github.com/typestack/class-validator#validation-decorators
+# バリデーション: 
+https://github.com/typestack/class-validator#validation-decorators
 yarn add class-transformer class-validator
 
 # モジュールの作成
