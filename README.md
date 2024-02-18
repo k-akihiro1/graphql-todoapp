@@ -98,3 +98,25 @@ Prismaクライアントのセットアップ
 # Passwordの暗号化
 `yarn add bcrypt`
 `yarn add --dev @types/bcrypt`
+
+# JWT(JSON Web Token)の導入
+- ヘッダー：ハッシュアルゴリズムの情報などのメタデータ
+- ペイロード：認証対象の情報でユーザー名やIDなどの任意の情報
+- 著名：ヘッダーとペイロードをエンコードしたものに秘密鍵を加えてハッシュ化したもの
+要素ごとにBase64エンコードされている
+３つの要素が.で結合されている
+![Alt text](image.png)
+# JWTを使った認証
+![Alt text](image-1.png)
+
+`nest g module auth`
+`nest g resolver auth --no-spec`
+`nest g service auth --no-spec`
+
+認証に必要なライブラリーのインストール
+`yarn add @nestjs/passport passport passport-local`
+`yarn add -D @types/passport-local`
+
+JWTに必要なライブラリーのインストール
+`yarn add @nestjs/jwt passport-jwt`
+`yarn add -D @types/passport-jwt`
