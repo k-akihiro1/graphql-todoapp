@@ -88,3 +88,13 @@ VARCHAR型のフィールドの方がTEXT型のフィールドよりも検索や
 
 Prismaクライアントのセットアップ
 `yarn add @prisma/client`
+
+
+# Userモデルの作成
+`nest g module user`
+`nest g resolver user --no-spec`  
+`nest g service user --no-spec`
+
+# Passwordの暗号化
+`yarn add bcrypt`
+`yarn add --dev @types/bcrypt`
